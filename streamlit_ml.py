@@ -14,6 +14,7 @@ from sklearn.impute import KNNImputer
 import base64
 from io import BytesIO
 
+file_path = "requirements.txt" 
 @st.cache_data
 def load_data(file_path):
     data = pd.read_csv(file_path, delimiter='\t')
